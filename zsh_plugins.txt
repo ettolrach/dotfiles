@@ -1,0 +1,7 @@
+# The static method is used, for more information, see https://getantibody.github.io/.
+# After modifying this file, run the following command:
+# antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+
+
+# Make sure this goes at the end of this file.
+zsh-users/zsh-syntax-highlighting

@@ -87,6 +87,8 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # Antibody plugins
 source ~/.zsh_plugins.sh
 
+. ~/programs/z.sh
+
 # exports
 export SUDO_EDITOR=nvim
 export EDITOR=nvim
