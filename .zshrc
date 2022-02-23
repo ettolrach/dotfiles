@@ -89,14 +89,16 @@ source ~/.zsh_plugins.sh
 
 . ~/programs/z.sh
 
-# exports
-export SUDO_EDITOR=nvim
-export EDITOR=nvim
+# Environment variables
+export SUDO_EDITOR="nvim"
+export EDITOR="nvim"
 export GHCUP_USE_XDG_DIRS=1
+export PATH="$HOME/.local/bin:$PATH"
 
 # Aliases
 alias ls='ls --color=auto'
 alias ip='ip -color=auto'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
-
+alias ssh="kitty +kitten ssh"
+alias onedriveUoE="onedrive --confdir=~/.config/onedriveUoE"
