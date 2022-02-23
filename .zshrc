@@ -7,19 +7,17 @@ fi
 
 # The following lines were added by compinstall
 
-zstyle ':completion:*' auto-description 'Specify %d'
-zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' format 'Completing %d'
-zstyle ':completion:*' glob gggg
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' glob 1
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
 zstyle ':completion:*' max-errors 5
 zstyle ':completion:*' menu select=1
 zstyle ':completion:*' original true
-zstyle ':completion:*' prompt '%e errors in completion.'
+zstyle ':completion:*' prompt 'List of corrections, %e errors:'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle ':completion:*' verbose true
+zstyle ':completion:*' use-compctl false
 zstyle :compinstall filename '/home/ettolrach/.zshrc'
 
 autoload -Uz compinit
