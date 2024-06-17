@@ -87,11 +87,17 @@ source ~/.zsh_plugins.sh
 
 . ~/programs/z.sh
 
+# Other key-bindings not already done by the Arch Wiki extract above
+bindkey '^H' backward-kill-word
+
 # Environment variables
 export SUDO_EDITOR="nvim"
 export EDITOR="nvim"
 export GHCUP_USE_XDG_DIRS=1
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cabal/bin:$PATH"
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITPPC=/opt/devkitpro/devkitPPC
 
 # Aliases
 alias ls='ls --color=auto'
@@ -100,3 +106,5 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ssh="kitty +kitten ssh"
 alias onedriveUoE="onedrive --confdir=~/.config/onedriveUoE"
+alias scala="scala"
+alias scalac="scalac3"
