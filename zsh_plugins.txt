@@ -5,3 +5,4 @@
 
 # Make sure this goes at the end of this file.
 zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
